@@ -1,0 +1,20 @@
+[
+  {
+    "name": "authentication-service",
+    "url": "https://github.com/acme/authentication-service",
+    "provider": "github",
+    "default_branch": "main"
+  },
+  {
+    "name": "payment-service",
+    "url": "https://gitlab.com/acme/payment-service",
+    "provider": "gitlab",
+    "default_branch": "develop"
+  },
+  {
+    "name": "order-service",
+    "url": "https://github.com/acme/order-service",
+    "provider": "github",
+    "default_branch": "main"
+  }
+]

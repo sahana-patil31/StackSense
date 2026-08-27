@@ -1,0 +1,35 @@
+{
+  "model_type": "RandomForestClassifier",
+  "baseline_model_type": "LogisticRegression",
+  "version": "risk_model_v1",
+  "training_timestamp": "2026-08-17T16:06:36.732356+00:00",
+  "dataset_size": 500,
+  "dataset_source": "synthetic_development_data (is_synthetic=True)",
+  "features": [
+    "files_changed",
+    "lines_changed",
+    "code_entities_changed",
+    "number_of_services_affected",
+    "number_of_dependencies_affected",
+    "test_coverage",
+    "historical_deployment_failures",
+    "historical_incidents_after_deployment",
+    "deployment_environment_prod",
+    "recent_deployment_frequency",
+    "previous_failure_rate_for_repository",
+    "number_of_import_relationships_affected"
+  ],
+  "metrics": {
+    "random_forest": {
+      "accuracy": 0.72,
+      "precision": 0.7059,
+      "recall": 0.8571,
+      "f1_score": 0.7742,
+      "roc_auc": 0.8162
+    },
+    "logistic_regression": {
+      "accuracy": 0.76,
+      "roc_auc": 0.8575
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "service_name": "authentication-service",
+    "timestamp": "2026-08-10T12:20:00Z",
+    "severity": "info",
+    "event_type": "login_success",
+    "message": "User login succeeded",
+    "error_type": null,
+    "metadata": {"user_id": "u-123"}
+  },
+  {
+    "service_name": "payment-service",
+    "timestamp": "2026-08-10T12:35:00Z",
+    "severity": " ERROR ",
+    "event_type": "payment_failed",
+    "message": "  Payment failed  ",
+    "error_type": "PaymentError",
+    "metadata": {"attempt": 2}
+  }
+]

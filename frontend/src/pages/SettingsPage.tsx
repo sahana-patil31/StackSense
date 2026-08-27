@@ -1,0 +1,6 @@
+import { Navbar } from '../components/Navbar';
+
+export const SettingsPage = () => {
+  const user = JSON.parse(localStorage.getItem('stacksense_user') || 'null') as { email?: string; role?: string } | null;
+  return <div className="min-h-screen bg-slate-950 text-slate-100"><Navbar /><main className="mx-auto max-w-4xl space-y-6 px-6 py-10"><header><p className="text-xs font-bold uppercase tracking-[0.25em] text-cyan-400">Workspace controls</p><h1 className="mt-2 text-3xl font-bold">Settings</h1></header><section className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6"><h2 className="text-lg font-semibold">Profile</h2><dl className="mt-5 grid gap-4 sm:grid-cols-2"><div><dt className="text-xs uppercase tracking-wider text-slate-500">Email</dt><dd className="mt-1 text-slate-200">{user?.email || 'Unknown'}</dd></div><div><dt className="text-xs uppercase tracking-wider text-slate-500">Role</dt><dd className="mt-1 text-cyan-300">{user?.role || 'Unknown'}</dd></div></dl></section><section className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6"><h2 className="text-lg font-semibold">AI configuration</h2><p className="mt-2 text-sm text-slate-400">Provider configuration is managed through server environment variables. Secrets are never displayed in the client.</p></section></main></div>;
+};

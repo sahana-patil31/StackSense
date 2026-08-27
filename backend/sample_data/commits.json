@@ -1,0 +1,18 @@
+[
+  {
+    "repository_id": "repo-1",
+    "sha": "1111111111111111111111111111111111111111",
+    "author_name": "Ada Lovelace",
+    "author_email": "ada@example.com",
+    "message": "Add auth token refresh support",
+    "committed_at": "2026-08-10T10:00:00Z"
+  },
+  {
+    "repository_id": "repo-2",
+    "sha": "2222222222222222222222222222222222222222",
+    "author_name": "Grace Hopper",
+    "author_email": "grace@example.com",
+    "message": "Fix payment retry handling",
+    "committed_at": "2026-08-10T11:30:00Z"
+  }
+]

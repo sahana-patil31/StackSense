@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --background: #E8DCC8;
+  --surface: #F5EFE6;
+  --sidebar: #D6C3A5;
+  --primary-text: #2F241C;
+  --secondary-text: #5A4939;
+  --border: #C5AD8A;
+  --accent: #6F5638;
+  --accent-dark: #4A3829;
+  --success: #26734D;
+  --warning: #A66A00;
+  --error: #B42318;
+  background: var(--background);
+  color: var(--primary-text);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 0;
+  background: var(--background);
+  color: var(--primary-text);
+}
+
+.app-shell,
+#root:has(nav) > div {
+  min-height: 100vh;
+  background: var(--background) !important;
+  color: var(--primary-text) !important;
+}
+
+.app-shell [class*="bg-slate-"],
+.app-shell [class*="bg-gray-"],
+.app-shell [class*="bg-zinc-"],
+#root:has(nav) > div [class*="bg-slate-"],
+#root:has(nav) > div [class*="bg-gray-"],
+#root:has(nav) > div [class*="bg-zinc-"],
+.app-shell .bg-black,
+#root:has(nav) > div .bg-black {
+  background-color: var(--surface) !important;
+  background-image: none !important;
+}
+
+.app-shell [class*="border-slate-"],
+.app-shell [class*="border-gray-"],
+.app-shell [class*="border-zinc-"],
+#root:has(nav) > div [class*="border-slate-"],
+#root:has(nav) > div [class*="border-gray-"],
+#root:has(nav) > div [class*="border-zinc-"] {
+  border-color: var(--border) !important;
+}
+
+.app-shell [class*="text-slate-"],
+.app-shell [class*="text-gray-"],
+.app-shell [class*="text-zinc-"],
+.app-shell .text-white,
+#root:has(nav) > div [class*="text-slate-"],
+#root:has(nav) > div [class*="text-gray-"],
+#root:has(nav) > div [class*="text-zinc-"],
+#root:has(nav) > div .text-white {
+  color: var(--primary-text) !important;
+}
+
+.app-shell input,
+.app-shell select,
+.app-shell textarea,
+#root:has(nav) > div input,
+#root:has(nav) > div select,
+#root:has(nav) > div textarea {
+  background-color: var(--surface) !important;
+  border-color: var(--border) !important;
+  color: var(--primary-text) !important;
+}
+
+.app-shell .login-input {
+  background-color: #FFFFFF !important;
+}
+
+.app-shell [class*="bg-[#4A3829]"],
+.app-shell [class*="bg-[#5B4636]"],
+.app-shell [class*="bg-[#6F5638]"],
+.app-shell [class*="bg-[#8B6F47]"] {
+  color: #FFFFFF !important;
+}
+
+.app-shell button[class*="bg-cyan-"],
+.app-shell a[class*="bg-cyan-"],
+#root:has(nav) > div button[class*="bg-cyan-"],
+#root:has(nav) > div a[class*="bg-cyan-"] {
+  background-color: var(--accent-dark) !important;
+  color: #FFFFFF !important;
+}
+
+.app-shell button[class*="bg-cyan-"]:hover,
+.app-shell a[class*="bg-cyan-"]:hover,
+#root:has(nav) > div button[class*="bg-cyan-"]:hover,
+#root:has(nav) > div a[class*="bg-cyan-"]:hover {
+  background-color: var(--accent) !important;
+}
+
+.app-shell .dashboard-nav,
+#root:has(nav) > div .dashboard-nav {
+  background-color: var(--sidebar) !important;
+  border-color: var(--border) !important;
+  color: var(--primary-text) !important;
+}
+
+.app-shell .dashboard-nav a[class*="text-cyan-"],
+.app-shell .dashboard-nav a:hover,
+.app-shell .dashboard-nav button:hover,
+#root:has(nav) > div .dashboard-nav a[class*="text-cyan-"],
+#root:has(nav) > div .dashboard-nav a:hover,
+#root:has(nav) > div .dashboard-nav button:hover {
+  color: var(--accent) !important;
+}

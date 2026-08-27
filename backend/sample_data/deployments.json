@@ -1,0 +1,18 @@
+[
+  {
+    "repository_id": "repo-1",
+    "commit_sha": "1111111111111111111111111111111111111111",
+    "environment": "production",
+    "status": "success",
+    "service_name": "authentication-service",
+    "deployed_at": "2026-08-10T12:00:00Z"
+  },
+  {
+    "repository_id": "repo-2",
+    "commit_sha": "2222222222222222222222222222222222222222",
+    "environment": "staging",
+    "status": "running",
+    "service_name": "payment-service",
+    "deployed_at": "2026-08-10T12:15:00Z"
+  }
+]
